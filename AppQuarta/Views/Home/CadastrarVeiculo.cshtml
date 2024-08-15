@@ -1,0 +1,54 @@
+﻿@model AppQuarta.Models.Veiculo
+@{
+    ViewData["Title"] = "CadastrarVeiculo";
+}
+
+<h2>Cadastrar Veículo</h2>
+
+<form action="" method="post">
+
+    <hr />
+
+    <div class="form-group">
+        <label class="control-label" asp-for="Marca"></label>
+        <span asp-validation-for="Marca" class="text-danger"></span>
+        <div class="col-10">
+            <input class="control-label" asp-for="Marca" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" asp-for="Nome"></label>
+        <span asp-validation-for="Nome" class="text-danger"></span>
+        <div class="col-10">
+            <input class="control-label" asp-for="Nome" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" asp-for="Velocidade"></label>
+        <span asp-validation-for="Velocidade" class="text-danger"></span>
+        <div class="col-10">
+            <input class="control-label" asp-for="Velocidade" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" asp-for="Tipo"></label>
+        <span asp-validation-for="Tipo" class="text-danger"></span>
+        <div class="col-10">
+            <input class="control-label" asp-for="Tipo" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label" asp-for="Ano"></label>
+        <span asp-validation-for="Ano" class="text-danger"></span>
+        <div class="col-10">
+            <input class="control-label" asp-for="Ano" />
+        </div>
+    </div>
+
+    <br />
+    <div class="col-md-offset-2 col-10">
+        <input type="submit" value="Cadastrar" class="btn btn-primary" />
+        <a class="btn btn-secondary" href="~/Home/Index">Cancelar</a>
+    </div>
+
+</form>
